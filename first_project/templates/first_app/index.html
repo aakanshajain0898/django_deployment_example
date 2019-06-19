@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends 'first_app/base.html' %}
+  {% block body_block %}
+<!-- {% load staticfiles %} -->
+<!-- <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+  </head>
+  <body> -->
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Hello this is index.html page showing!</h1>
+        <p>{{insert_me}}</p>
+        <p>{{ text|upper }}</p>
+        <p>{{ text|cut:'Hello' }}</p>
+        <p>{{ number|add:'99'}}</p>
+        <h2>Welcome to index!</h2>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="h">Hi, This is a picture !</h1>
+      <img src="{% static 'images\b.png' %}" alt="Uh Oh, did't show !">
+      <h2>Here are your acess records:</h2>
+
+    </div>
+    <div class="djangotwo">
+      <!-- {% if access_records %}
+        <table>
+          <thead>
+            <th>Site Name</th>
+            <th>Date Accessed</th>
+          </thead>
+
+          {% for acc in access_records %}
+            <tr>
+              <td>{{ acc.name }}</td>
+              <td>{{ acc.date }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+      {% else %}
+        <p>NO ACCESS RECORDE FOUND! </p>
+      {% endif %} -->
+    </div>
+  {% endblock %}
+  <!-- </body>
+</html> -->
